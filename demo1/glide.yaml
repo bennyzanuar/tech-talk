@@ -1,0 +1,3 @@
+package: github.com/Bhinneka/backend-talk1/demo1
+import:
+- package: gopkg.in/mgo.v2
