@@ -1,15 +1,11 @@
-# Repository for Bhinneka's Backend Talk 16/01/2019
+# Bhinneka's Tech Talk 
 
-## why polymorphism and abstraction are important for your development process
+Repository for Bhinneka's Tech Talk containing demo application.
 
-we'll show you why polymorphism and abstraction are important for your development process. I'll show this demo in `Go`. This demo is divided into three parts. 
-
-### Getting started
-
-```shell
-$ docker-compose up
-```
+## Content
+* Polymorphism & Abstraction - [Wuriyanto](https://github.com/wuriyanto48) (16/01/2019)
 
 #
 
-### Bhinneka.com 2018
+## Copyright
+Copyright &copy; 2021 PT Bhinneka Mentari Dimensi
