@@ -1,0 +1,37 @@
+{
+  "title": "Registrasi",
+  "description": "Simple registrasi form.",
+  "type": "object",
+  "required": [
+    "firstName",
+    "lastName"
+  ],
+  "properties": {
+    "name" : {
+      "type": "object",
+      "properties" : {
+        "firstName": {
+          "type": "string",
+          "title": "Nama depan"
+        },
+        "lastName": {
+          "type": "string",
+          "title": "Nama belakang"
+        }
+      }
+    },
+    "age": {
+      "type": "integer",
+      "title": "Umur"
+    },
+    "bio": {
+      "type": "string",
+      "title": "Bio"
+    },
+    "password": {
+      "type": "string",
+      "title": "Kata sandi",
+      "minLength": 8
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "firstName": {
+    "ui:placeholder": "Nama depan"
+  },
+  "lastName": {
+    "ui:placeholder": "Nama belakang"
+  },
+  "age": {
+    "ui:placeholder": "Umur",
+    "ui:widget": "numberWidget",
+    "ui:title": "Umur"
+  },
+  "bio": {
+    "ui:widget": "textarea"
+  },
+  "password": {
+    "ui:widget": "password"
+  }
+}

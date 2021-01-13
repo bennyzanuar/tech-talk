@@ -1,0 +1,23 @@
+{
+  "email": {
+    "ui:title": "Email",
+    "ui:placeholder": "Email",
+    "ui:options": {
+      "inputType": "email"
+    }
+  },
+  "password": {
+    "ui:title": "Password",
+    "ui:placeholder": "Password",
+    "ui:widget": "password"
+  },
+  "grantType": {
+    "ui:widget": "hidden"
+  },
+  "deviceId": {
+    "ui:widget": "hidden"
+  },
+  "deviceLogin": {
+    "ui:widget": "hidden"
+  }
+}

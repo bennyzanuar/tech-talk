@@ -1,0 +1,137 @@
+{
+  "title": "A registration form",
+  "description": "A simple form example.",
+  "type": "object",
+  "required": [
+    "firstName",
+    "telephone"
+  ],
+  "properties": {
+    "firstName": {
+      "type": "string",
+      "title": "Nama depan"
+    },
+    "lastName": {
+      "type": "string",
+      "title": "Nama belakang"
+    },
+    "age": {
+      "type": "integer",
+      "title": "Umur"
+    },
+    "bio": {
+      "type": "string",
+      "title": "Bio"
+    },
+    "password": {
+      "type": "string",
+      "title": "Kata sandi",
+      "minLength": 3
+    },
+    "telephone": {
+      "type": "string",
+      "title": "No. Handphone",
+      "format": "phone-id"
+    },
+    "jenisKelamin": {
+      "title": "Jenis kelamin (select)",
+      "$ref": "#/definitions/JenisKelamin"
+    },
+    "jenisKelamin2": {
+      "title": "Jenis kelamin (select enum names)",
+      "type": "string",
+      "enum": [
+        "laki-laki",
+        "perempuan"
+      ],
+      "enumNames": [
+        "Laki-laki",
+        "Perempuan"
+      ]
+    },
+    "jenisKelamin3": {
+      "title": "Jenis kelamin (radio)",
+      "type": "string",
+      "enum": ["Laki-laki", "Perempuan"]
+    },
+    "provinsi": {
+      "$ref": "#/definitions/Provinsi",
+      "title": "Provinsi"
+    },
+    "kota": {
+      "$ref": "#/definitions/Kota",
+      "title": "Kota"
+    },
+    "kecamatan": {
+      "$ref": "#/definitions/Kecamatan",
+      "title": "Kecamatan"
+    },
+    "kelurahan": {
+      "$ref": "#/definitions/Kelurahan",
+      "title": "Kelurahan"
+    },
+    "kealhlian": {
+      "type": "array",
+      "title": "Keahlian",
+      "items": {
+        "type": "string",
+        "enum": [
+          "js",
+          "go",
+          "python"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "toggleMask": {
+      "title": "Apakah anda setuju ?",
+      "$ref": "#/definitions/Toggle"
+    }
+  },
+  "definitions": {
+    "JenisKelamin": {
+      "title": "Jenis Kelamin",
+      "type": "string",
+      "oneOf": [
+        {
+          "title": "Laki-laki",
+          "const": "laki-laki"
+        },
+        {
+          "title": "Perempuan",
+          "const": "perempuan"
+        }
+      ]
+    },
+    "Provinsi": {
+      "title": "Provinsi",
+      "type": "string"
+    },
+    "Kota": {
+      "title": "Kota",
+      "type": "string"
+    },
+    "Kecamatan": {
+      "title": "Kecamatan",
+      "type": "string"
+    },
+    "Kelurahan": {
+      "title": "Kelurahan",
+      "type": "string"
+    },
+    "Toggle": {
+      "title": "Toggle",
+      "type": "boolean",
+      "oneOf": [
+        {
+          "title": "Enable",
+          "const": true
+        },
+        {
+          "title": "Disable",
+          "const": false
+        }
+      ]
+    }
+  }
+}

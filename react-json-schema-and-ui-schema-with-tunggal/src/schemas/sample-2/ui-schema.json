@@ -1,0 +1,57 @@
+{
+  "firstName": {
+    "ui:placeholder": "Nama depan"
+  },
+  "lastName": {
+    "ui:placeholder": "Nama belakang"
+  },
+  "age": {
+    "ui:widget": "numberWidget",
+    "ui:title": "Umur"
+  },
+  "bio": {
+    "ui:widget": "textarea"
+  },
+  "password": {
+    "ui:widget": "password",
+    "ui:help": "Hint: Make it strong!"
+  },
+  "date": {
+    "ui:widget": "alt-datetime"
+  },
+  "telephone": {
+    "ui:widget": "numberWidget"
+  },
+  "jenisKelamin": {
+    "ui:widget": "select",
+    "ui:placeholder": "Pilih jenis kelamin"
+  },
+  "jenisKelamin2": {
+    "ui:widget": "select",
+    "ui:placeholder": "Pilih jenis kelamin"
+  },
+  "jenisKelamin3": {
+    "ui:widget": "radio"
+  },
+  "jenisUsaha": {
+    "ui:widget": "radio"
+  },
+  "blendMode": {
+    "ui:widget": "select"
+  },
+  "provinsi": {
+    "ui:placeholder": "Pilih provinsi "
+  },
+  "kota": {
+    "ui:placeholder": "Pilih kota "
+  },
+  "kecamatan": {
+    "ui:placeholder": "Pilih kecamatan "
+  },
+  "kelurahan": {
+    "ui:placeholder": "Pilih kelurahan "
+  },
+  "kealhlian" : {
+    "ui:widget": "checkboxes"
+  }
+}

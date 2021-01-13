@@ -1,0 +1,33 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.header {
+  width: 100%;
+  position: fixed;
+  padding: 15px;
+  background:#092c52;
+  top: 0;
+  z-index: 1;
+}
+
+.main-content {
+  margin-top: 75px;
+}
+
+ul.nav li {
+  display: inline;
+  padding: 10px;
+}
+
+ul.nav li a {
+  color: white;
+  text-decoration: none;
+}
